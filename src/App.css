@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(196, 180, 145);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board-container{
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.outer{
+  font-size: 1.6rem;
+  padding: 10px; 
+  border: 2px solid hsla(0, 1%, 37%, 0.5);
+  border-radius: 5px;
+  color: hsla(17, 85%, 49%, 0.5);
+  margin-left: 400px;
+  
+} 
+
+.review{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+.add-button{
+  font-size: 1.6rem;
+  padding: 10px; 
+  border: 2px solid hsla(0, 1%, 37%, 0.5);
+  border-radius: 5px;
+  color:hsla(0, 1%, 37%, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+}
+.add-button:hover{
+  background-color:  rgb(210, 203, 203);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-input{
+margin: 10px;
+display: flex;
+  gap: 20px;
 }
+
+.card{
+  color:rgb(130, 83, 83);
+  margin-left: 10px;
+}
+
