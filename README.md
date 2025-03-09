@@ -1,5 +1,5 @@
  # Description 
-Project : Its a project that helps to  craete to-do-list having features like adding and removing task.  
+Project : Its a project that helps to  create a to-do-list having features like adding and removing task.  
 
 ## Available Scripts
 
