@@ -6,79 +6,8 @@
     background-color: bisque;
     margin-top: 100px;
     margin-left: 50px;
-    /* text-align: center;
-    color: rgb(152, 113, 47);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 1.6rem;
-    margin-top: 50px;
-    margin-left: 20px; */
+    
 
 }
 
 
-/* --------------------------------------Let's say we already have two boards:
-
-js
-Copy code
-[
-  { id: 101, title: "Shopping List", tasks: ["Buy milk"] },
-  { id: 102, title: "Work Tasks", tasks: ["Finish report"] }
-]
-Now, we call handleAddTask(101, "Buy eggs").
-
-This will find the board with id: 101 and add "Buy eggs" to its tasks list.
-
-📌 After Adding Task
-js
-Copy code
-[
-  { id: 101, title: "Shopping List", tasks: ["Buy milk", "Buy eggs"] },
-  { id: 102, title: "Work Tasks", tasks: ["Finish report"] }
-]
-🔹 Only the correct board was updated (ID 101). */
-
-
-
-/* ---------------------------------How filter() Works:
-
-.filter((_, index) => index !== taskIndex)
-Goes through each task in the list.
-If the task’s index matches taskIndex, it gets removed.
-If not, the task stays.
-📌 Example Before Deleting a Task
-Let's say we have this board:
-
-js
-Copy
-Edit
-{
-  id: 101, 
-  title: "Shopping List", 
-  tasks: ["Buy milk", "Buy eggs", "Buy bread"]
-}
-If we call handleDeleteTask(101, 1), we want to remove "Buy eggs" (index 1).
-0!==1 then keep it
-1!==1  then don't keep it
-
-----------------------------------------------------------------
-onChange={(e) => setBoardTitle(e.target.value)}
-This runs when the user types in the box.
-e.target.value → Grabs the latest text from the input box.
-setBoardTitle(e.target.value) → Saves that text in boardTitle.
-💡 Example: 1️. The user types "Shopping List".
-2.e.target.value becomes "Shopping List".
-3️. setBoardTitle("Shopping List") updates the state.
-4️. The input box now shows "Shopping List".
-
-
----------------------------------------
-onClick={() => handleDeleteTask(board.id, index)}
-🔹 When the button is clicked, this calls handleDeleteTask.
-🔹 It sends the board’s ID and the task's position (index) as arguments. (1,1)-means select 2nd board and selected 2 task inside the board
-
-
-*/
